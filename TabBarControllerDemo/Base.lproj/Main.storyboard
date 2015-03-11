@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Attraction-->
+        <scene sceneID="hNz-n2-bh7">
+            <objects>
+                <viewController id="9pv-A4-QxB" customClass="AttractionViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ia1-K6-d13"/>
+                        <viewControllerLayoutGuide type="bottom" id="4ug-Mw-9AY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="tsR-hK-woN">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="oq9-rt-eSA">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="431"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="oq9-rt-eSA" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" constant="-16" id="5hd-pd-SUM"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="oq9-rt-eSA" secondAttribute="trailing" constant="-16" id="Kox-4J-k7G"/>
+                            <constraint firstItem="oq9-rt-eSA" firstAttribute="top" secondItem="tsR-hK-woN" secondAttribute="topMargin" id="WKp-AJ-C6d"/>
+                            <constraint firstItem="4ug-Mw-9AY" firstAttribute="top" secondItem="oq9-rt-eSA" secondAttribute="bottom" id="iGs-h4-zkb"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Attraction" image="attractionicon.png" id="acW-dT-cKf"/>
+                    <connections>
+                        <outlet property="ivAttractionImg" destination="oq9-rt-eSA" id="9sa-m9-B7J"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="439" y="-453"/>
+        </scene>
+        <!--Restaurant-->
+        <scene sceneID="wg7-f3-ORb">
+            <objects>
+                <viewController id="8rJ-Kc-sve" customClass="RestaurantViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="L7p-HK-0SC"/>
+                        <viewControllerLayoutGuide type="bottom" id="Djb-ko-YwX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="QS5-Rx-YEW">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ICa-vO-dlv">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="431"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Djb-ko-YwX" firstAttribute="top" secondItem="ICa-vO-dlv" secondAttribute="bottom" id="683-Kj-eOf"/>
+                            <constraint firstItem="ICa-vO-dlv" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leadingMargin" constant="-16" id="H6O-8S-bo5"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ICa-vO-dlv" secondAttribute="trailing" constant="-16" id="Q0v-gI-CKf"/>
+                            <constraint firstItem="ICa-vO-dlv" firstAttribute="top" secondItem="QS5-Rx-YEW" secondAttribute="topMargin" id="SNV-pb-kkO"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Restaurant" image="restauranticon.png" id="cPa-gy-q4n"/>
+                    <connections>
+                        <outlet property="ivRestuarantImg" destination="ICa-vO-dlv" id="b6b-m5-S7K"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="439" y="87"/>
+        </scene>
+        <!--Movie-->
+        <scene sceneID="KNF-og-22t">
+            <objects>
+                <viewController id="mrz-yt-Hf3" customClass="MovieViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="vnk-QS-dxV"/>
+                        <viewControllerLayoutGuide type="bottom" id="fQH-fX-O2x"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="au1-gb-eQl">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rut-ZJ-pTc">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="431"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="rut-ZJ-pTc" firstAttribute="leading" secondItem="au1-gb-eQl" secondAttribute="leadingMargin" constant="-16" id="QNG-1H-KV4"/>
+                            <constraint firstItem="fQH-fX-O2x" firstAttribute="top" secondItem="rut-ZJ-pTc" secondAttribute="bottom" id="Rhc-cH-T0v"/>
+                            <constraint firstItem="rut-ZJ-pTc" firstAttribute="top" secondItem="au1-gb-eQl" secondAttribute="topMargin" id="iAO-sd-DHy"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="rut-ZJ-pTc" secondAttribute="trailing" constant="-16" id="im5-5x-21p"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Movie" image="movieicon.png" id="uqk-dB-INd"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="ivMovieImg" destination="rut-ZJ-pTc" id="6jq-fh-2gT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Wqp-Xd-Ndr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="86" y="650"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="yl2-sM-qoP">
+            <objects>
+                <tabBarController id="49e-Tb-3d3" sceneMemberID="viewController">
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="W28-zg-YXA">
+                        <rect key="frame" x="0.0" y="975" width="768" height="49"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
+                        <segue destination="mrz-yt-Hf3" kind="relationship" relationship="viewControllers" id="HOi-qc-06d"/>
+                        <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="0.0" y="0.0"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="attractionicon.png" width="30" height="30"/>
+        <image name="movieicon.png" width="30" height="30"/>
+        <image name="restauranticon.png" width="30" height="30"/>
+    </resources>
+</document>
